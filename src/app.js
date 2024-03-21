@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 swaggerDocs(app, PORT)
 // API empleados
-app.use(employeesRoutes)
+app.use('/api', employeesRoutes)
 // API inicial
 app.use(indexRoutes)
 
