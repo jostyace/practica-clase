@@ -5,7 +5,7 @@ const router = Router()
 // Obtener todos los empleados
 /**
  * @openapi
- * /employees:
+ * /api/employees:
  *   get:
  *     summary: Obtiene todos los empleados
  *     tags:
@@ -36,7 +36,7 @@ router.get('/employees', getEmployees)
 // Obtener los detalles del empleado por ID
 /**
  * @openapi
- * /employees/{id}:
+ * /api/employees/{id}:
  *   get:
  *     summary: Obtiene un empleado por su ID
  *     tags:
@@ -76,7 +76,7 @@ router.get('/employees/:id', getEmployee)
 
 /**
  * @openapi
- * /employees:
+ * /api/employees:
  *   post:
  *     summary: Crea un nuevo empleado
  *     tags:
@@ -118,7 +118,7 @@ router.post('/employees', createEmployees)
 // Actualizar un empleado
 /**
  * @openapi
- * /employees:
+ * /api/employees:
  *   patch:
  *     summary: Actualiza un empleado existente
  *     tags:
@@ -166,7 +166,7 @@ router.patch('/employees', updateEmployees)
 // Eliminar un empleado
 /**
  * @openapi
- * /employees/{id}:
+ * /api/employees/{id}:
  *   delete:
  *     summary: Elimina un empleado por su ID
  *     tags:
