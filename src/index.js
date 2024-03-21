@@ -1,3 +1,4 @@
+// import '../swagger-autogen.js'
 import app from './app.js'
 import { PORT } from './config.js'
 
