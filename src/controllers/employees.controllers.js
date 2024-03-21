@@ -9,7 +9,7 @@ export const getEmployees = async (req, res) => {
   }
 }
 
-export const getEmploye = async (req, res) => {
+export const getEmployee = async (req, res) => {
   const { id } = req.params
   try {
     const [rows] = await pool.query('SELECT * FROM employee WHERE id = ?', [id])
