@@ -120,17 +120,17 @@ router.post('/employees', createEmployees)
  * @openapi
  * /api/employees/{id}:
  *   patch:
- *     summary: Actualiza un empleado existente
+ *     summary: Actualiza un empleado existente por su ID
  *     tags:
  *       - Empleados
  *     parameters:
- *      - in: path
+ *       - in: path
  *         name: id
- *         description: ID del empleado a eliminar
+ *         description: ID del empleado a actualizar
  *         required: true
  *         schema:
- *           type: string
- *           example: "1"
+ *           type: integer
+ *           example: 1
  *       - in: body
  *         name: body
  *         description: Datos para actualizar el empleado
@@ -138,9 +138,6 @@ router.post('/employees', createEmployees)
  *         schema:
  *           type: object
  *           properties:
- *             id:
- *               type: string
- *               example: "1"
  *             name:
  *               type: string
  *               example: "Juan Pérez"
