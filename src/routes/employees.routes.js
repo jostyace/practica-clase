@@ -162,7 +162,7 @@ router.post('/employees', createEmployees)
  *       500:
  *         description: Error interno del servidor
  */
-router.patch('/employees', updateEmployees)
+router.patch('/employees/:id', updateEmployees)
 // Eliminar un empleado
 /**
  * @openapi
